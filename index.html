@@ -5,11 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- tailwind css cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/fe04fdc062.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Flower Shop</title>
 </head>
 <body>
-    
+    <header class="w-full h-screen box-border">
+        <div class="w-9/10 mx-auto">
+            <nav class="py-10 sm:py-12 flex justify-between items-center">
+                <div class="logo">
+                    <a href="#"><img src="assets/logo.png" alt="logo"></a>
+                </div>
+                <ul class="sm:flex gap-12">
+                    <li class="hidden sm:block"><a class="font-bold text-[#252432]" href="#home">Home</a></li>
+                    <li class="hidden sm:block"><a class="text-[#8987A1]" href="#">Shop</a></li>
+                    <li class="hidden sm:block"><a class="text-[#8987A1]" href="#">About Us</a></li>
+                    <li><a class="tracking-wide" href="#"><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a></li>
+                </ul>
+            </nav>
+            <div class="flex flex-col sm:flex-row justify-between sm:items-center sm:my-40">
+                <div class="sm:w-1/2 order-2 sm:order-1 mb-16">
+                    <h1 class="font-bold text-6xl leading-20 font-serif tracking-wide">ALWAYS <span class="text-orange-500">FRESH</span> <br> <span class="text-orange-500">FLOWERS</span></h1>
+                    <p class="text-xl leading-6 text-gray-400 mt-3">Indulge your senses with the beauty and fragrance of <br> our fresh flower shop. From classic roses to exotic <br> blooms, we offer a wide variety of fresh flowers that <br> are perfect for any occasion. </p>
+                </div>
+                <div class="sm:w-1/2 order-1 sm:order-1 my-7 sm:my-0">
+                    <img class="w-full" src="assets/hero-flower.png" alt="flower">
+                </div>
+            </div>
+        </div>
+    </header>
     <script src="main.js"></script>
 </body>
 </html>
