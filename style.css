@@ -1,1 +1,11 @@
+/* tailwind css */
 @import "tailwindcss";
+
+/* google fonts */
+.inter{
+    font-family: "Inter", sans-serif;
+}
+.noto{
+    font-family: "Noto Serif", serif !important; 
+}
+
