@@ -1,7 +1,10 @@
-let btn = document.querySelectorAll('.btn')
+let cart = document.getElementById('cart');
+let allBtn = document.querySelectorAll('.btn')
+let total = 0;
 
-btn.forEach(btn => {
+for(let btn of allBtn){
     btn.addEventListener('click', function(){
-        alert("Flower Added to Cart");
-    });
-});
+        total++;
+        cart.innerHTML = total;
+    })
+}
